@@ -15,21 +15,44 @@ const ItemCtrl = (function(){
     const data = {
         items: [
             {id: 0, name: 'Steak Dinner', calories: 1200},
-            {id: 0, name: 'Steak Dinner', calories: 1200},
-            {id: 0, name: 'Steak Dinner', calories: 1200}
+            {id: 1, name: 'Cookie', calories: 400},
+            {id: 2, name: 'Eggs', calories: 300}
         ],
         currentItem: null,
         totalCalories: 0
     }
 
+    // Public methods
+    return{
+        logData: function(){
+            return data;
+        }
+    }
+
 })();
+
 
 // UI Controller
 const UICtrl = (function(){
 
+    // Public method
+    return{
+
+    }
 })();
+
 
 // App Controller
 const AppCtrl = (function(ItemCtrl, UICtrl){
 
+    // Public methods
+    return{
+        init: function(){
+
+        }
+    }
 })(ItemCtrl, UICtrl);
+
+
+// Initialize App
+AppCtrl.init();
